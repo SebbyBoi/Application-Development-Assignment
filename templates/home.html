@@ -1,19 +1,91 @@
 {% extends "base.html" %}
-{% block title %}Budget Taobao{% endblock %}
+{% block title %}Library Loan System - Home{% endblock %}
 
 {% block content %}
 <link rel="stylesheet" href="{{url_for('static', filename='home.css')}}">
 <h1 class="display-4">Budget 淘宝</h1>
-<div class="roww">
-  {% for product in products %}
-    <div class="columnn">
-      <div class="cardd">
-        <img src = "{{ product.get_image() }}" >
-        <h2> {{ product.get_title() }} </h2>
-        <h2> ${{ product.get_retail_price() }} </h2>
-        <a class="DetailsButton" href="/products/{{ product.get_id() }}">Details</a>
-      </div>
+<p>Welcome to budget 淘宝</p>
+<div class="grid-product">
+    <div class="Product">
+        <img src="{{url_for('static', filename='Product1Img1.jpeg')}}" />
     </div>
-  {% endfor %}
+    <div class="Product">
+        <img src="{{url_for('static', filename='Product2Img2.jpeg')}}" />
+    </div>
+    <div class="Product">
+        <img src="{{url_for('static', filename='Product3Img3.jpeg')}}" />
+    </div>
+    <div class="Product">
+        <img src="{{url_for('static', filename='Product4Img4.jpeg')}}" />
+    </div>
+
+
+    <div class="Content">
+        <a href="product1">Leng Lui Price: $100</a>
+    </div>
+    <div class="Content">
+        <a href="product1">Leng Lui Price: $200</a>
+    </div>
+    <div class="Content">
+        <a href="product1">Leng Lui Price: $300</a>
+    </div>
+    <div class="Content">
+        <a href="product1">Leng Lui Price: $400</a>
+    </div>
+
+
+    <div class="Product">
+        <img src="{{url_for('static', filename='Product5Img5.jpeg')}}" />
+    </div>
+    <div class="Product">
+        <img src="{{url_for('static', filename='Product6Img6.jpeg')}}" />
+    </div>
+    <div class="Product">
+        <img src="{{url_for('static', filename='Product7Img7.jpeg')}}" />
+    </div>
+    <div class="Product">
+        <img src="{{url_for('static', filename='Product8Img8.jpeg')}}" />
+    </div>
+
+
+    <div class="Content">
+        <a href="product1">Leng Lui Price: $500</a>
+    </div>
+    <div class="Content">
+        <a href="product1">Leng Lui Price: $600</a>
+    </div>
+    <div class="Content">
+        <a href="product1">Leng Lui Price: $700</a>
+    </div>
+    <div class="Content">
+        <a href="product1">Leng Lui Price: $800</a>
+    </div>
+
+
+    <div class="Product">
+        <img src="{{url_for('static', filename='Product9Img9.jpeg')}}" />
+    </div>
+    <div class="Product">
+        <img src="{{url_for('static', filename='Product10Img10.jpeg')}}" />
+    </div>
+    <div class="Product">
+        <img src="{{url_for('static', filename='Product11Img11.jpeg')}}" />
+    </div>
+    <div class="Product">
+        <img src="{{url_for('static', filename='Product12Img12.jpeg')}}" />
+    </div>
+
+    <div class="Content">
+        <a href="product1">Leng Lui Price: $900</a>
+    </div>
+    <div class="Content">
+        <a href="product1">Leng Lui Price: $1000</a>
+    </div>
+    <div class="Content">
+        <a href="product1">Leng Lui Price: $1100</a>
+    </div>
+    <div class="Content">
+        <a href="product1">Leng Lui Price: $1200</a>
+    </div>
 </div>
 {% endblock %}

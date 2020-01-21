@@ -1,6 +1,6 @@
 <!--nav class="navbar navbar-expand-lg navbar-light bg-light"-->
 <nav class="navbar sticky-top navbar-light bg-light navbar-expand-lg">
-  <a class="navbar-brand" href="/"><img src="{{url_for('static', filename='logo.jpg')}}" style="width: 70px; height: 50px" /></a>
+  <a class="navbar-brand" href="/">BUDGET TAOBAO</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -8,38 +8,19 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="/loginPage">Login <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/loginPage">LOGIN <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="/signupPage">Signup</a>
-      </li>
-      <!--li class="nav-item active">
-        <a class="nav-link" href="/adminPage">(Admin Page)</a>
-      </li-->
-      <li class="nav-item active">
-        <a class="nav-link" href="/notificationPage">Notification</a>
+        <a class="nav-link" href="/signupPage">SIGNUP</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="/helpPage">Help</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="/customer_servicePage">Customer Service</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Manage Product</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="/createProduct">Create Product</a>
-          <a class="dropdown-item" href="/retrieveProduct">Display Product</a>
-        </div>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="/cartPage"><img src="{{url_for('static', filename='ShoppingCartLogo.png')}}" style="width: 25px; height: 25px" /></a>
+        <a class="nav-link" href="/adminPage">ADMIN</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0" action="/search">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search">
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <!--button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button-->
-      <button type="submit">Search</button>
+      <a href="/searchPage">Search</a>
     </form>
   </div>
 </nav>

@@ -3,20 +3,7 @@
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color: grey;
-   color: white;
+   background color: gray;
+   color: black;
    text-align: center;
-}
-
-.footer div{
-    padding: 10px 0px;
-}
-
-.footer div a{
-    padding: 0px 10px;
-    color:white;
-}
-
-.footer div a:hover{
-    color: pink;
 }

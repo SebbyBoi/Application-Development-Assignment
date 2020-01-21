@@ -3,26 +3,11 @@
 
 {% block content %}
 <link rel="stylesheet" href="{{url_for('static', filename='searchPage.css')}}">
-<div class="grid-product">
-    <div class="Product">
-        <img src="{{url_for('static', filename='Product3Img3.jpeg')}}" />
-    </div>
-    <div class="Product">
-        <img src="{{url_for('static', filename='Product4Img4.jpeg')}}" />
-    </div>
-    <div class="Product">
-        <!--img src="{{url_for('static', filename='.jpeg')}}" /-->
-    </div>
-    <div class="Product">
-        <!--img src="{{url_for('static', filename='.jpeg')}}" /-->
-    </div>
-    <!--Separation-->
-    <div class="Content">
-        <a href="FemaleDress1">Female Dress 1 Price: $300</a>
-    </div>
-    <div class="Content">
-        <a href="#">Female Dress 2 Price: $400</a>
-    </div>
-</div>
+<img src="{{url_for('static', filename='Product3Img3.jpeg')}}" />
+<br>
+<p>Leng Lui Price: $100</p>
+<img src="{{url_for('static', filename='Product4Img4.jpeg')}}" />
+<br>
+<p>Leng Lui Price $100</p>
 
 {% endblock %}
