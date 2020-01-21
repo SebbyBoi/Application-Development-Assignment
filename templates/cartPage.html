@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Library Loan System - Home{% endblock %}
+
+{% block content %}
+<h1>Shopping Cart</h1>
+<a href="/pastPurchases">Click Here to view past purchases!</a>
+<br>
+<img src="{{url_for('static', filename='ProductCart.jpg')}}" style="width:1650px;"/>
+<img src="{{url_for('static', filename='Checkout.jpg')}}" style="width:1650px;"/>
+{% endblock %}

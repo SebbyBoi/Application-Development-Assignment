@@ -1,0 +1,70 @@
+/* ----------------------------Home CSS--------------------------------- */
+img{
+    width: 175px;
+    height: 175px;
+}
+a.DetailsButton{
+    padding:5px;
+    border: 2px solid black;
+
+    color:black;
+}
+/*
+.grid-product{
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+
+    justify-items: center;
+    display: grid;
+    This will cause fat content text (dont put) grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "r1c1 r1c2 r1c3 r1c4"
+    "r2c1 r2c2 r2c3 r2c4"
+    "r3c1 r3c2 r3c3 r3c4"
+}*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.columnn {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.roww {margin: 0 -5px;}
+
+div.roww{
+}
+/* Clear floats after the columns */
+.roww:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .columnn {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.cardd {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}

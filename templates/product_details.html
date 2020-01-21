@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Budget Taobao{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='home.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='product_details.css')}}">
+<h1 class="display-4">Budget 淘宝</h1>
+<p>Welcome to budget 淘宝 created by sebby!</p>
+<!--Table-->
+<table style="width:100%">
+    <tr>
+        <td>
+            <img src = "../..{{ product.get_image() }}" >
+        </td>
+        <td>
+            <h1>
+                {{ product.get_title() }}
+            </h1>
+            <p>
+                <br>
+                Price: ${{ product.get_retail_price() }}
+                <br>
+                Size:
+                <input type="radio" name="gender" value="male"> Small
+                <input type="radio" name="gender" value="female"> Medium
+                <input type="radio" name="gender" value="other"> Large
+                <br>
+                Quantity:
+                <input type="number" value="1">
+                <br>
+                Stock: {{ product.get_stock() }}
+                <br>
+                <button type="button">Buy Now!</button> <button type="button">Add to cart!</button>
+            </p>
+        </td>
+    <tr>
+        <td>{{ product.display_description() }}</td>
+        <td></td>
+    </tr>
+</table>
+<!--End of Table-->
+
+{% endblock %}

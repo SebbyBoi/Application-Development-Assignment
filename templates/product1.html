@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Library Loan System - Home{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='product1.css')}}">
+<img src="{{url_for('static', filename='Product1Img1.jpeg')}}" />
+<h1>Price: $100</h1>
+<h2>Female Clothes 1</h2>
+<p>Size: Small</p>
+<p>Quantity: 1 Stock: 1</p>
+<a href="#">Add to Cart!</a>
+<p></p>
+<a href="/purchasePage">Purchase Now</a>
+{% endblock %}

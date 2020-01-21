@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Library Loan System - Retrieve Product{% endblock %}
+{% block content %}
+<h1 class="display-4">Retrieve Users</h1>
+<div>
+ <table class="table table-striped">
+ <thead>
+ <tr>
+ <th>ID</th>
+ <th>Title</th>
+ <th>Stock</th>
+ <th>Cost Price</th>
+ <th>Retail Price</th>
+ </tr>
+ </thead>
+ <tbody>
+ {% for product in productList %}
+ <tr>
+  <td>{{ product.get_id() }}</td>
+  <td>{{ product.get_title() }}</td>
+  <td>{{ product.get_stock() }}</td>
+  <td>{{ product.get_cost_price() }}</td>
+  <td>{{ product.get_retail_price() }}</td>
+
+ <td><a href="/updateProduct/{{product.get_id()}}" class="btn
+btn-warning">Update</a></td>
+ <td>
+ <form action="/deleteProduct/{{product.get_id()}}" method="POST">
+ <input type="submit" value="Delete" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this product?');">
+ </form>
+ </td>
+ </tr>
+ {% endfor %}
+ </tbody>
+ </table>
+</div>
+{% endblock %}

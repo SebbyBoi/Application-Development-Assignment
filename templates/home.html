@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Budget Taobao{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='home.css')}}">
+<h1 class="display-4">Budget 淘宝</h1>
+<div class="roww">
+  {% for product in products %}
+    <div class="columnn">
+      <div class="cardd">
+        <img src = "{{ product.get_image() }}" >
+        <h2> {{ product.get_title() }} </h2>
+        <h2> ${{ product.get_retail_price() }} </h2>
+        <a class="DetailsButton" href="/products/{{ product.get_id() }}">Details</a>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Library Loan System - Home{% endblock %}
+
+{% block content %}
+<form method="post" action="/adminPage">
+  First name:<br>
+  <input name="username" id="username" required>
+  <br>
+    Password:<br>
+  <input type="password" name="password" id="password" required>
+  <br>
+  <input type="submit" value="Log In">
+</form>
+{% endblock %}
